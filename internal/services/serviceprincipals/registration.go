@@ -30,13 +30,14 @@ func (r Registration) SupportedDataSources() map[string]*schema.Resource {
 // SupportedResources returns the supported Resources supported by this Service
 func (r Registration) SupportedResources() map[string]*schema.Resource {
 	return map[string]*schema.Resource{
-		"azuread_service_principal":                                  servicePrincipalResource(),
-		"azuread_service_principal_certificate":                      servicePrincipalCertificateResource(),
-		"azuread_service_principal_claims_mapping_policy_assignment": servicePrincipalClaimsMappingPolicyAssignmentResource(),
-		"azuread_service_principal_delegated_permission_grant":       servicePrincipalDelegatedPermissionGrantResource(),
-		"azuread_service_principal_password":                         servicePrincipalPasswordResource(),
-		"azuread_service_principal_token_signing_certificate":        servicePrincipalTokenSigningCertificateResource(),
-		"azuread_synchronization_job":                                synchronizationJobResource(),
-		"azuread_synchronization_secret":                             synchronizationSecretResource(),
+		"azuread_service_principal":                                     servicePrincipalResource(),
+		"azuread_service_principal_certificate":                         servicePrincipalCertificateResource(),
+		"azuread_service_principal_claims_mapping_policy_assignment":    servicePrincipalClaimsMappingPolicyAssignmentResource(),
+		"azuread_service_principal_delegated_permission_grant":          servicePrincipalDelegatedPermissionGrantResource(),
+		"azuread_service_principal_password":                            servicePrincipalPasswordResource(),
+		"azuread_service_principal_token_signing_certificate":           servicePrincipalTokenSigningCertificateResource(),
+		"azuread_service_principal_preferred_token_signing_certificate": servicePrincipalPreferredTokenSigningCertificateResource(),
+		"azuread_synchronization_job":                                   synchronizationJobResource(),
+		"azuread_synchronization_secret":                                synchronizationSecretResource(),
 	}
 }
